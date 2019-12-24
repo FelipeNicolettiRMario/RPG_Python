@@ -11,4 +11,8 @@ if __name__ == "__main__":
     Azeroth.addPlayer(Bob)
 
     Bob.setItem("Chave","Objeto","Nulo","Abre algo",1)
-    print(Bob.inventory)
+    Bob.setHealth("INCREASE",10)
+    Bob.setHealth("DECREASE",5)
+    Azeroth.removePlayer("Bob")
+    
+    print(Azeroth.players)

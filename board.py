@@ -12,5 +12,11 @@ class Board:
         self.backlog.append(message)
 
     def removePlayer(self,name):
-        self.players.remove(name)
+
+        tbdPlayers = self.players.copy()
+        for player in self.players:
+            if player.name == name:
+                playerIndex = self.players.index(player)
+                tbdPlayers.pop(playerIndex)
     
+        self.players = tbdPlayers

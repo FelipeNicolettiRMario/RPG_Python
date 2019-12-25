@@ -14,5 +14,11 @@ if __name__ == "__main__":
     Bob.setHealth("INCREASE",10)
     Bob.setHealth("DECREASE",5)
     Azeroth.removePlayer("Bob")
-    
+
+    arrayDice = []
+    for i in range(2):
+        dice = Azeroth.setDices()
+        arrayDice.append(dice)
+
+    print(Azeroth.rollDIce(arrayDice))
     print(Azeroth.players)

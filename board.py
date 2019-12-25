@@ -23,7 +23,7 @@ class Board:
     
         self.players = tbdPlayers
     
-    def rollDIce(self,dices):
+    def rollDice(self,dices):
         returnedValues = []
         for dice in dices:
             maxVal = dice['Faces']

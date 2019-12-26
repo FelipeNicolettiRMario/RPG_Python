@@ -13,7 +13,8 @@ if __name__ == "__main__":
     Bob.setItem("Chave","Objeto","Nulo","Abre algo",1)
     Bob.setHealth("INCREASE",10)
     Bob.setHealth("DECREASE",5)
-    Azeroth.removePlayer("Bob")
+    Skill = Bob.setSkill("Shock","Teste",10,1)
+    print(Skill)
 
     arrayDice = []
     for i in range(2):

@@ -58,7 +58,7 @@ class Character:
             self.health -= value
             backlogString = "Character {self.name} heals {value} of health"
 
-            return baclkogString
+            return backlogString
 
     def increaseXP(self,value):
         self.experience += value

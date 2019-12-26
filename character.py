@@ -34,7 +34,7 @@ class Character:
 
         self.inventory.append(itemDict)
 
-        backlogString = "Character {self.name} added the item {name} to inventory";format(**vars())
+        backlogString = "Character {self.name} added the item {name} to inventory".format(**vars())
 
         return backlogString
 
@@ -50,19 +50,19 @@ class Character:
 
         if flag == "INCREASE":
             self.health += value
-            backlogString = "Character {self.name} take {value} of damage"
+            backlogString = "Character {self.name} take {value} of damage".format(**vars())
 
-            return baclkogString
+            return backlogString
 
         elif flag == "DECREASE":
             self.health -= value
-            backlogString = "Character {self.name} heals {value} of health"
+            backlogString = "Character {self.name} heals {value} of health".format(**vars())
 
             return backlogString
 
     def increaseXP(self,value):
         self.experience += value
-        backlogString = "Character {self.name} gained {value} of experience"
+        backlogString = "Character {self.name} gained {value} of experience".format(**vars())
 
         return backlogString
 
@@ -70,7 +70,7 @@ class Character:
         self.level += 1
         self.experience = 0
 
-        backlogString = "Character {self.name} passed to level {self.level}"
+        backlogString = "Character {self.name} passed to level {self.level}".format(**vars())
 
         return backlogString
 
